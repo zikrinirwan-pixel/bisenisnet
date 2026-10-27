@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- UBAH NAMA BENGKEL DI SINI JIKA PERLU -->
+    <title>Jaya Motor - Bengkel & Sparepart Motor Terlengkap</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="fixed w-full z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-5xl mx-auto px-4 py-3.5 flex justify-between items-center">
+            <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-lg bg-red-600 flex items-center justify-center text-white font-bold text-lg shadow-sm">
+                    <i class="fa-solid fa-wrench"></i>
+                </div>
+                <!-- NAMA BENGKEL -->
+                <span class="font-extrabold text-lg tracking-tight text-slate-900">SPAREPART<span class="text-red-600">MOTOR</span></span>
+            </div>
+            <a href="#katalog" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold px-4 py-2.5 rounded-full transition">
+                Cek Harga & Servis
+            </a>
+        </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="relative pt-28 pb-16 md:py-32 bg-slate-950 text-white overflow-hidden">
+        <!-- Background Image Overlay -->
+        <div class="absolute inset-0 opacity-25 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent"></div>
+
+        <div class="relative max-w-5xl mx-auto px-4 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-red-600/20 border border-red-500/40 text-red-400 text-xs font-semibold mb-4">
+                🔧 Spesialis Servis & Suku Cadang Motor
+            </span>
+            <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4">
+                Tarikan Motor Kembali Enteng, Sparepart Dijamin Ori!
+            </h1>
+            <p class="text-slate-300 text-sm md:text-base max-w-xl mx-auto mb-8 leading-relaxed">
+                Melayani servis ringan, bongkar mesin, kelistrikan, hingga ganti oli dan ban untuk semua jenis motor Matic (Karbu/Injeksi), Bebek, dan Sport. Mekanik berpengalaman & jujur.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-3 justify-center">
+                <a href="#katalog" class="bg-red-600 hover:bg-red-500 text-white font-bold py-3.5 px-7 rounded-xl shadow-lg shadow-red-600/30 transition flex items-center justify-center gap-2">
+                    <span>Lihat Paket Servis & Sparepart</span>
+                    <i class="fa-solid fa-arrow-down text-sm"></i>
+                </a>
+                <a href="https://wa.me/6283147684295?text=Halo%20Bos,%20saya%20mau%20konsultasi%20servis%20/%20tanya%20stok%20sparepart%20motor." target="_blank" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold py-3.5 px-7 rounded-xl transition flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-green-400 text-lg"></i>
+                    <span>Tanya Stok Sparepart</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= KEUNGGULAN (TRUST BADGES) ================= -->
+    <section class="py-8 bg-white border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 grid grid-cols-3 gap-2 md:gap-6 text-center">
+            <div class="p-2">
+                <div class="text-red-600 text-xl md:text-2xl mb-1"><i class="fa-solid fa-medal"></i></div>
+                <h3 class="font-bold text-xs md:text-sm text-slate-900">100% Part Asli</h3>
+                <p class="text-[11px] md:text-xs text-slate-500 mt-0.5">Dijamin awet & presisi</p>
+            </div>
+            <div class="p-2 border-x border-slate-100">
+                <div class="text-red-600 text-xl md:text-2xl mb-1"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                <h3 class="font-bold text-xs md:text-sm text-slate-900">Mekanik Ahli</h3>
+                <p class="text-[11px] md:text-xs text-slate-500 mt-0.5">Paham Karbu & Injeksi</p>
+            </div>
+            <div class="p-2">
+                <div class="text-red-600 text-xl md:text-2xl mb-1"><i class="fa-solid fa-wallet"></i></div>
+                <h3 class="font-bold text-xs md:text-sm text-slate-900">Harga Bersahabat</h3>
+                <p class="text-[11px] md:text-xs text-slate-500 mt-0.5">Transparan & bergaransi</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= KATALOG LAYANAN & HARGA ================= -->
+    <section id="katalog" class="py-14 max-w-5xl mx-auto px-4">
+        <div class="text-center mb-10">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">Layanan Bengkel & Katalog Part</h2>
+            <p class="text-slate-500 text-sm mt-1">Pilih layanan servis atau pesan suku cadang langsung lewat WhatsApp</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- LAYANAN 1: SERVIS & CVT -->
+            <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="relative h-48 bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=600&q=80" alt="Servis Motor" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 bg-slate-900/85 backdrop-blur-sm text-white text-[11px] font-bold px-3 py-1 rounded-full">
+                            Perawatan Rutin
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-extrabold text-slate-900">Paket Tune Up & Servis CVT</h3>
+                        <p class="text-xs text-slate-500 mt-1 mb-4">Bikin tarikan motor kembali responsif, bebas gredek, dan irit bensin untuk pemakaian harian.</p>
+                        
+                        <div class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-3 mb-4">
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-check text-red-600 w-4"></i> Bersihkan Karburator / Throttle Body</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-check text-red-600 w-4"></i> Servis Full CVT + Gemuk Baru</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-check text-red-600 w-4"></i> Cek Busi, Filter Udara & Rem</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 pt-0">
+                    <div class="flex items-baseline justify-between mb-4 bg-slate-50 p-3 rounded-xl">
+                        <span class="text-xs text-slate-500 font-medium">Jasa mulai</span>
+                        <div>
+                            <span class="text-xl font-extrabold text-slate-900">Rp 45.000</span>
+                            <span class="text-[11px] text-slate-500">/paket</span>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/6283147684295?text=Halo%20Bos,%20saya%20mau%20booking%20*Paket%20Tune%20Up%20%26%20Servis%20CVT*.%20Bengkel%20buka%20jam%20berapa?" target="_blank" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm py-3 rounded-xl transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-green-400 text-base"></i>
+                        <span>Booking Servis</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- LAYANAN 2: SPAREPART FAST MOVING & OLI (BEST SELLER) -->
+            <div class="bg-white rounded-2xl border-2 border-red-600 shadow-md overflow-hidden flex flex-col justify-between relative">
+                <div>
+                    <div class="relative h-48 bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=600&q=80" alt="Sparepart dan Oli" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 bg-red-600 text-white text-[11px] font-extrabold px-3 py-1 rounded-full shadow">
+                            🔥 Paling Dicari
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-extrabold text-slate-900">Paket Oli & Fast Moving</h3>
+                        <p class="text-xs text-slate-500 mt-1 mb-4">Sedia suku cadang harian lengkap dan bergaransi untuk Honda, Yamaha, Suzuki, dll.</p>
+                        
+                        <div class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-3 mb-4">
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-oil-can text-red-600 w-4"></i> Oli Mesin & Oli Gardan (Gratis Pasang)</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-gears text-red-600 w-4"></i> Vanbelt, Roller, & Gear Set Rantai</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-circle-dot text-red-600 w-4"></i> Kampas Rem, Laher & Ban Luar/Dalam</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 pt-0">
+                    <div class="flex items-baseline justify-between mb-4 bg-red-50/70 p-3 rounded-xl border border-red-200/60">
+                        <span class="text-xs text-slate-600 font-medium">Mulai dari</span>
+                        <div>
+                            <span class="text-xl font-extrabold text-red-600">Rp 35.000</span>
+                            <span class="text-[11px] text-slate-500">+ Gratis Pasang*</span>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/6283147684295?text=Halo%20Bos,%20saya%20mau%20tanya%20stok%20dan%20harga%20*Sparepart%20/%20Oli*%20untuk%20motor%20saya." target="_blank" class="w-full bg-red-600 hover:bg-red-500 text-white font-bold text-sm py-3 rounded-xl transition flex items-center justify-center gap-2 shadow-sm">
+                        <i class="fa-brands fa-whatsapp text-white text-base"></i>
+                        <span>Cek Stok & Harga</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- LAYANAN 3: KELISTRIKAN & MESIN -->
+            <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="relative h-48 bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=600&q=80" alt="Kelistrikan dan Mesin" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 bg-slate-900/85 backdrop-blur-sm text-white text-[11px] font-bold px-3 py-1 rounded-full">
+                            Solusi Motor Mogok
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-extrabold text-slate-900">Servis Kelistrikan & Mesin</h3>
+                        <p class="text-xs text-slate-500 mt-1 mb-4">Atasi tuntas masalah motor susah hidup, hilang pengapian, aki tekor, hingga turun mesin.</p>
+                        
+                        <div class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-3 mb-4">
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-car-battery text-red-600 w-4"></i> Sedia Aki Baru, Kiprok, CDI & Busi</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-bolt text-red-600 w-4"></i> Urut Kabel, Kontak & Starter Mati</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-wrench text-red-600 w-4"></i> Ganti Seher / Blok & Bore Up Harian</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 pt-0">
+                    <div class="flex items-baseline justify-between mb-4 bg-slate-50 p-3 rounded-xl">
+                        <span class="text-xs text-slate-500 font-medium">Biaya Cek</span>
+                        <div>
+                            <span class="text-lg font-extrabold text-slate-900">Sesuai Kerusakan</span>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/6283147684295?text=Halo%20Bos,%20saya%20mau%20konsultasi%20masalah%20*Kelistrikan%20/%20Mesin*%20motor%20saya." target="_blank" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm py-3 rounded-xl transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-green-400 text-base"></i>
+                        <span>Konsultasi Mekanik</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= TESTIMONI PELANGGAN ================= -->
+    <section class="py-12 bg-slate-100">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-xl md:text-2xl font-extrabold text-center text-slate-900 mb-8">Kata Pelanggan Bengkel Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/60">
+                    <div class="flex text-amber-400 text-xs mb-2">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs md:text-sm text-slate-600 italic mb-3">"Motor matic saya tadinya brebet dan sering mati mendadak karena masalah kelistrikan. Dibawa ke sini langsung ketemu penyakitnya, ganti sparepart harga jujur, sekarang tarikan enteng banget!"</p>
+                    <div class="font-bold text-xs text-slate-900">— Rizky Pratama</div>
+                </div>
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/60">
+                    <div class="flex text-amber-400 text-xs mb-2">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs md:text-sm text-slate-600 italic mb-3">"Cari sparepart motor dari yang matic karbu lama sampai injeksi terbaru lengkap semua di sini. Enaknya bisa tanya stok dulu lewat WA sebelum datang ke bengkel."</p>
+                    <div class="font-bold text-xs text-slate-900">— Hendra Saputra</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= INFO LOKASI & FOOTER ================= -->
+    <footer class="bg-slate-950 text-slate-400 py-10 text-xs">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h3 class="text-white font-extrabold text-base mb-2">BENGKEL & SPAREPART MOTOR</h3>
+            <!-- UBAH ALAMAT BENGKEL DI SINI -->
+            <p class="max-w-md mx-auto mb-4 leading-relaxed">
+                <i class="fa-solid fa-location-dot text-red-500 mr-1"></i> Buka Setiap Hari (08.00 - 17.00) • Melayani Servis & Penjualan Suku Cadang
+            </p>
+            <div class="border-t border-slate-800 pt-6 mt-6 text-[11px]">
+                &copy; 2026 Bengkel & Sparepart Motor. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= TOMBOL WA MELAYANG ================= -->
+    <a href="https://wa.me/6283147684295?text=Halo%20Bos,%20saya%20mau%20tanya%20servis%20/%20sparepart%20motor." target="_blank" class="fixed bottom-5 right-5 z-50 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-xl flex items-center gap-2 transition transform hover:scale-105">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+        <span class="font-bold text-xs pr-1">Chat Bengkel</span>
+    </a>
+
+</body>
+</html>
